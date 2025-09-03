@@ -1,0 +1,32 @@
+{
+  "name": "merchant-api-pusher",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "create-datasource": "ts-node --transpile-only src/create-datasource.ts",
+    "push": "ts-node --transpile-only src/push.ts",
+    "status": "ts-node --transpile-only src/status.ts",
+    "register-gcp": "ts-node --transpile-only src/register-gcp.ts"
+  },
+  "dependencies": {
+    "@google-shopping/datasources": "*",
+    "@google-shopping/products": "*",
+    "@shopify/admin-api-client": "*",
+    "dotenv": "*",
+    "google-auth-library": "*",
+    "he": "*",
+    "node-fetch": "*"
+  },
+  "devDependencies": {
+    "@types/he": "*",
+    "@types/node": "*",
+    "eslint": "*",
+    "prettier": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
+

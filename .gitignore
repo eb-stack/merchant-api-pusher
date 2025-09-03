@@ -1,0 +1,11 @@
+# build & deps
+node_modules/
+dist/
+
+# local secrets (DO NOT COMMIT)
+.env
+gsa-key.json
+
+# misc
+*.log
+.DS_Store
